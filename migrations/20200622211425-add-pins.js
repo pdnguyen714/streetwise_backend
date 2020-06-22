@@ -17,8 +17,8 @@ exports.setup = function(options, seedLink) {
 exports.up = function(db) {
   return db.createTable('pins', {
     id: { type: 'int', primaryKey: true, autoIncrement: true },
-    longitude: 'number',
-    latitude: 'number',
+    longitude: 'string',
+    latitude: 'string',
     title: 'string',
     comment: 'string',
     link: 'string'

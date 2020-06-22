@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const config = require('../database')
+const config = require('../../database')
 const { Client } = require('pg');
 
 router.get('/', async (req, res, next) => {
@@ -23,7 +23,7 @@ router.post('/', async (req, res, next) => {
       comment,
       link
     ) VALUES (
-      '${req.user.longitude}',
+      '${req.body.longitude}',
       '${req.body.latitude}',
       '${req.body.title}',
       '${req.body.comment}',
