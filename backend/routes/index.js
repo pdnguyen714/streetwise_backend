@@ -19,14 +19,14 @@ router.post('/', async (req, res, next) => {
     INSERT INTO pins (
       longitude,
       latitude,
-      title,
-      comment,
+      description,
+      type,
       link
     ) VALUES (
       '${req.body.longitude}',
       '${req.body.latitude}',
-      '${req.body.title}',
-      '${req.body.comment}',
+      '${req.body.description}',
+      '${req.body.type}',
       '${req.body.link}'
     );
   `

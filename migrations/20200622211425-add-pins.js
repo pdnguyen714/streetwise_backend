@@ -19,8 +19,8 @@ exports.up = function(db) {
     id: { type: 'int', primaryKey: true, autoIncrement: true },
     longitude: 'string',
     latitude: 'string',
-    title: 'string',
-    comment: 'string',
+    description: 'string',
+    type: 'string',
     link: 'string'
   })
 };
